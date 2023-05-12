@@ -1,0 +1,64 @@
+<mat-drawer-container class="example-container" autosize>
+
+  <!-- SIDEBAR -->
+  <mat-drawer [opened]="true" #drawer class="example-sidenav" mode="side">
+
+    <mat-nav-list>
+      <a [routerLink]="['/'+link.url]" mat-list-item  *ngFor="let link of links" [class.active]="activeLink === link.title" (click)="setActiveLink(link)">
+        {{ link.title }}
+        <hr>
+      </a>
+      
+      <a (click)="logOut()" mat-list-item style="position: absolute; bottom: 0;">
+        Cerrar sesión
+      </a>
+    </mat-nav-list>
+
+  </mat-drawer>
+
+
+  <!-- TOOLBAR -->
+  <div class="example-sidenav-content">
+    <mat-toolbar color="primary" class="mat-toolbar-light" style="height: 100px;">
+      <div class="div.flex.justify-content-bewteen">
+        <button type="button" (click)="drawer.toggle()" mat-icon-button class="example-icon"
+          aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span style="font-size: 24px; font-weight: 300;">Plataforma para Cursos</span>
+
+      </div>
+
+      <!-- cambiar para mostrar nombre del usuario  -->
+      <div>
+        <p style="color: #fff;">{{(authUserObs$ | async) ?.email}} </p>
+      </div>
+
+    </mat-toolbar>
+
+
+    <!-- CUERPO DE LA PAGINA - Utilizando router-->
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+</mat-drawer-container>
+
+<style>
+  .example-container {
+    margin-left: 0;
+  }
+
+  .example-sidenav-content {
+    margin-left: 0;
+  }
+
+    .category-title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
+

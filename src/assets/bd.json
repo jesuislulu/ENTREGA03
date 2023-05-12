@@ -1,0 +1,132 @@
+{
+  "alumnos": [
+    {
+      "nombre": "Roma",
+      "apellido": "Martinelli",
+      "email": "mail@mail.com",
+      "dni": 4123644,
+      "telefono": 3515313131,
+      "cursos": [
+        "Javascript"
+      ],
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "María",
+      "apellido": "Callas",
+      "dni": 38789654,
+      "telefono": 342555111,
+      "email": "mail@mail.com"
+    },
+    {
+      "id": 4,
+      "nombre": "Carlos",
+      "apellido": "Quinto",
+      "dni": 42890834,
+      "telefono": 3425157897,
+      "email": "mail@mail.com"
+    },
+    {
+      "id": 5,
+      "nombre": "Sandro",
+      "apellido": "Boticelli",
+      "dni": 35235783,
+      "telefono": 3415789645,
+      "email": "mail@mail.com"
+    },
+    {
+      "id": 6,
+      "nombre": "Daenerys",
+      "apellido": "Stormborn",
+      "dni": 46786234,
+      "telefono": 3425789643,
+      "email": "mail@mail.com"
+    },
+    {
+      "id": 7,
+      "nombre": "Miguel",
+      "apellido": "Angelo",
+      "dni": 54542416,
+      "telefono": 3515789456,
+      "email": "mail@mail.com"
+    },
+    {
+      "id": 9,
+      "nombre": "Rosa",
+      "apellido": "Cabral",
+      "dni": 97423421,
+      "telefono": 3415556987,
+      "email": "mail@mail.com"
+    },
+    {
+      "nombre": "Vicente",
+      "apellido": "Cortazar",
+      "email": "mail@mail.com",
+      "dni": 34258964,
+      "telefono": 3425896741,
+      "cursos": [
+        "Angular"
+      ],
+      "id": 17
+    }
+  ],
+  "cursos": [
+    {
+      "nombre": "Inglés",
+      "duracion": 6,
+      "docente": "Silvia",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Angular",
+      "duracion": 9,
+      "docente": "Marilina"
+    },
+    {
+      "id": 3,
+      "nombre": "Illustrator",
+      "duracion": 8,
+      "docente": "Braulio"
+    },
+    {
+      "id": 4,
+      "nombre": "HTML",
+      "duracion": 10,
+      "docente": "Marilina"
+    },
+    {
+      "id": 9,
+      "nombre": "Curso Nueve",
+      "duracion": 11,
+      "docente": "Silvia"
+    }
+  ],
+  "docentes": [
+    {
+      "id": 1,
+      "nombre": "Silvia",
+      "apellido": "Gambino",
+      "curso": [
+        "Angular"
+      ]
+    },
+    {
+      "nombre": "Marilina",
+      "apellido": "Perez",
+      "curso": [
+        "Angular" 
+      ],
+      "id": 3
+    },
+    {
+      "nombre": "Braulio",
+      "apellido": "Kraken",
+      "curso": [
+        "Angular"
+      ],
+      "id": 4
+    }
+  ]
+}

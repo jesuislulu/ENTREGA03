@@ -1,0 +1,92 @@
+<h3 mat-dialog-title>Datos del alumno </h3>
+
+<div mat-dialog-content>
+  <form [formGroup]="registerForm">
+
+    <div>
+      <mat-form-field [formGroup]="registerForm" appearance="fill">
+        <mat-label>Nombre</mat-label>
+
+        <input [formControl]="nombreControl" matInput>
+        <mat-error *ngIf="nombreControl.invalid">Minimo {{nombreApellidoMinLength}} caracteres</mat-error>
+        <mat-icon matSuffix></mat-icon>
+      </mat-form-field>
+    </div>
+
+
+    <div>
+      <mat-form-field [formGroup]="registerForm" appearance="fill">
+        <mat-label>Apellido</mat-label>
+
+        <input [formControl]="apellidoControl" matInput>
+        <mat-error *ngIf="apellidoControl.invalid">Mínimo {{nombreApellidoMinLength}} caracteres</mat-error>
+
+        <mat-icon matSuffix></mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div>
+
+      <mat-form-field [formGroup]="registerForm" appearance="fill">
+        <mat-label>DNI</mat-label>
+        <input [formControl]="dniControl" matInput >
+        <mat-error *ngIf="dniControl.invalid">Mínimo {{dniMinLength}} dígitos</mat-error>
+        <mat-icon matSuffix></mat-icon>
+
+
+      </mat-form-field>
+    </div>
+
+    <div>
+
+      <mat-form-field [formGroup]="registerForm" appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input [formControl]="emailControl" matInput>
+        <mat-error *ngIf="emailControl.invalid">{{getErrorMessage()}}</mat-error>
+        <mat-icon matSuffix>mail</mat-icon>
+
+
+      </mat-form-field>
+    </div>
+
+
+    <div>
+      <mat-form-field [formGroup]="registerForm" appearance="fill">
+        <mat-label>Telefono</mat-label>
+
+        <input [formControl]="telefonoControl" matInput  >
+        <mat-error *ngIf="telefonoControl.invalid">Mínimo {{telefonoMinLength}} dígitos</mat-error>
+
+        <mat-icon matSuffix>phone</mat-icon>
+
+      </mat-form-field>
+    </div>
+
+
+    
+    <div>
+      <mat-form-field appearance="fill">
+          <mat-label>Inscripcion a cursos</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="curso" [formControl]="cursosControl" multiple>
+            <mat-option *ngFor="let curso of cursos" [value]="curso" >
+              {{curso}}
+            </mat-option>
+          </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions>
+      <button (click)="cerrarDialog()" mat-button >
+        Cancelar
+      </button>
+
+      <button (click)="guardar()" mat-raised-button color="primary">
+        Guardar
+      </button>
+
+    </div>
+
+
+  </form>
+
+</div>

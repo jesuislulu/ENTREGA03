@@ -1,0 +1,44 @@
+[
+  {"idAlumno":1,
+    "alumno": "Lucía Rocha",
+    "idCurso":2,
+    "nombreCurso": "Angular",
+    "docenteACargo": "Marilina Perez",
+    "fechaInicio": 120623
+  },
+  {"idAlumno":1,
+    "alumno": "Lucía Rocha",
+    "idCurso":2,
+    "nombreCurso": "Illustrator",
+    "docenteACargo": "Braulio Kraken",
+    "fechaInicio": 221123
+  },
+  {"idAlumno":1,
+    "alumno": "Lucía Rocha",
+    "idCurso":3,
+    "nombreCurso": "Inglés",
+    "docenteACargo": "Silvia Gambino",
+    "fechaInicio": 120623
+  },
+  {"idAlumno":2,
+    "alumno": "Roma Martinelli",
+    "idCurso":2,
+    "nombreCurso": "Angular",
+    "docenteACargo": "Marilina Perez",
+    "fechaInicio": 120623
+  },
+  {"idAlumno":3,
+    "alumno": "Maria Ayala",
+    "idCurso":2,
+    "nombreCurso": "HTML",
+    "docenteACargo": "Marilina Perez",
+    "fechaInicio": 221123
+  },
+  {"idAlumno":4,
+    "alumno": "Carlos Quinto",
+    "idCurso":3,
+    "nombreCurso": "Inglés",
+    "docenteACargo": "Silvia Gambino",
+    "fechaInicio": 120623
+  }
+]
