@@ -13,7 +13,6 @@ import { FormAbmDocentesComponent } from './form-abm-docentes/form-abm-docentes.
   declarations: [
     ListaDocentesComponent,
     DetalleDocentesComponent,
-    FormAbmDocentesComponent,
     DocentesComponent
   ],
   imports: [

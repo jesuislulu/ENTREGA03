@@ -7,6 +7,7 @@ import { Curso } from 'src/interfaces';
   providedIn: 'root'
 })
 export class CursosService {
+  delete: any;
 
   constructor(private http: HttpClient) {}
 

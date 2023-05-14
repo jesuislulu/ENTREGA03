@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DocentesService } from 'src/app/services/docentes.service';
 import { Docente } from 'src/interfaces/docente';
@@ -22,6 +22,10 @@ export class DetalleDocentesComponent {
     .subscribe((docente)=> this.docente = docente)
 
     console.log(this.docente?.apellido)
+  }
+
+  ngOnInit(): void {
+    // Código que se ejecutará en la inicialización del componente
   }
 
 }
